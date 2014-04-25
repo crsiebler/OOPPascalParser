@@ -8,5 +8,21 @@
 
 #include "common.h"
 #include "Token.h"
+#include "LineList.h"
 
 
+class Identifier: public Token
+{
+	//define class here
+private:
+
+
+public:
+	// Declare a variable to store the list of Line Numbers
+	LineList *lines;
+	
+	// Declare the Children for the Binary Tree
+	Identifier *leftChild;
+	Identifier *rightChild;
+
+}

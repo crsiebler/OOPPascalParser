@@ -11,10 +11,7 @@
 Token::Token()
 {
 
-	// Initialize the Linked List of Line Occurrences
-	this->lines = new LineList();
-    this->leftChild = NULL;
-    this->rightChild = NULL;
+	
 
 }
 Token::~Token()

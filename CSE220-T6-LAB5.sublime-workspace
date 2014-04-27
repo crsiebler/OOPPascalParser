@@ -52,10 +52,7 @@
 			}
 		},
 		{
-			"contents": "//Identifier.h\n//Created by Terry Ulery, Kristen Tourek, Joe Cruz\n//Lab 5\n\n\n#ifndef lab5_Identifier\n#define lab5_Identifier\n\n#include \"common.h\"\n#include \"Token.h\"\n#include \"LineList.h\"\n\n\nclass Identifier: public Token\n{\n	//define class here\nprivate:\n\n\npublic:\n	// Declare a variable to store the list of Line Numbers\n	LineList *lines;\n	\n	// Declare the Children for the Binary Tree\n	Identifier *leftChild;\n	Identifier *rightChild;\n\n}",
 			"file": "Identifier.h",
-			"file_size": 178,
-			"file_write_time": 130421432920063403,
 			"settings":
 			{
 				"buffer_size": 434,
@@ -63,19 +60,15 @@
 			}
 		},
 		{
-			"file": "/C/Users/Terry/Documents/thread.cpp",
+			"file": "Literal.h",
 			"settings":
 			{
-				"buffer_size": 319,
-				"line_ending": "Windows",
-				"name": "thread.cpp"
+				"buffer_size": 147,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "// Edited by: Terry Ulery, Joe Cruz, Kristen Tourek\n//\n//  Token.cpp\n//  Lab4\n//\n//  Created by Bryce Holton.\n//\n\n#include \"Token.h\"\n\nToken::Token()\n{\n\n	\n\n}\nToken::~Token()\n{\n	delete this->lines;\n}\nvoid Token::setCode(TokenCode newCode)\n{\n    this->code = newCode;\n}\nTokenCode Token::getCode()\n{\n    return this->code;\n}\nvoid Token::setType(LiteralType newType)\n{\n    this->type = newType;\n}\nLiteralType Token::getType()\n{\n    return this->type;\n}\nvoid Token::setLiteral(int newInteger)\n{\n    this->literal.integer = newInteger;\n}\nint Token::getIntLiteral()\n{\n    return this->literal.integer;\n}\nvoid Token::setLiteral(float newReal)\n{\n    this->literal.real = newReal;\n}\nfloat Token::getRealLiteral()\n{\n    return this->literal.real;\n}\nvoid Token::setLiteral(string newString)\n{\n    this->literal.stringLiteral = (char*)malloc(sizeof(char) * newString.length() + 1);\n    strcpy(this->literal.stringLiteral, newString.c_str());\n}\nstring Token::getStringLiteral()\n{\n    return string(this->literal.stringLiteral);\n}\nvoid Token::setTokenString(string s)\n{\n    this->tokenString = s;\n}\nstring Token::getTokenString()\n{\n    return this->tokenString;\n}\n",
 			"file": "Token.cpp",
-			"file_size": 1357,
-			"file_write_time": 130414995028687035,
 			"settings":
 			{
 				"buffer_size": 1148,
@@ -95,6 +88,14 @@
 			"settings":
 			{
 				"buffer_size": 12530,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 1642,
 				"line_ending": "Windows"
 			}
 		}
@@ -123,6 +124,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Terry/Documents/thread.cpp",
 		"/C/Users/Terry/Documents/GitHub/Space_Frontier/Design Documents/corefeatures.txt",
 		"/C/Users/Terry/Documents/GitHub/kLea/CSE220-T6-Lab4/common.h",
 		"/C/Users/Terry/Documents/GitHub/kLea/CSE220-T6-Lab4/LineList.h",
@@ -317,8 +319,8 @@
 						"selection":
 						[
 							[
-								250,
-								250
+								73,
+								0
 							]
 						],
 						"settings":
@@ -333,23 +335,22 @@
 				},
 				{
 					"buffer": 4,
-					"file": "/C/Users/Terry/Documents/thread.cpp",
+					"file": "Literal.h",
 					"settings":
 					{
-						"buffer_size": 319,
+						"buffer_size": 147,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								317,
-								317
+								133,
+								133
 							]
 						],
 						"settings":
 						{
-							"auto_name": "thread.cpp",
 							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -370,8 +371,8 @@
 						"selection":
 						[
 							[
-								153,
-								153
+								236,
+								236
 							]
 						],
 						"settings":
@@ -437,7 +438,35 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3150.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "main.cpp",
+					"settings":
+					{
+						"buffer_size": 1642,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

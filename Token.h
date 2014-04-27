@@ -37,7 +37,7 @@ public:
 	
 	
     Token();
-    ~Token();
+    virtual ~Token();
     void setCode(TokenCode newCode);
     TokenCode getCode();
     void setType(LiteralType newType);

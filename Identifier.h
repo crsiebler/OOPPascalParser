@@ -18,6 +18,8 @@ private:
 
 
 public:
+	Identifier();
+	~Identifier();
 	// Declare a variable to store the list of Line Numbers
 	LineList *lines;
 	
@@ -25,4 +27,7 @@ public:
 	Identifier *leftChild;
 	Identifier *rightChild;
 
-}
+};
+
+
+#endif

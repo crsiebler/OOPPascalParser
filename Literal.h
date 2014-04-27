@@ -9,7 +9,7 @@
 
 
 template <typename T>
-class Literal //: public Token
+class Literal : public Token
 {
 private:
 

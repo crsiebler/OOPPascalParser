@@ -26,7 +26,7 @@ IdentifierTree::~IdentifierTree() {
 //-------------------------//
 // insertIdentifier Method //
 //-------------------------//
-void IdentifierTree::insertIdentifier(Token *parentNode, Token *identifier) {
+void IdentifierTree::insertIdentifier(Identifier *parentNode, Identifier *identifier) {
 	
 	if (strcmp(identifier->getTokenString().c_str(),parentNode->getTokenString().c_str()) == 0) {
 		// Identifier is the same as the parent
@@ -50,7 +50,7 @@ void IdentifierTree::insertIdentifier(Token *parentNode, Token *identifier) {
 }
 
 
-void IdentifierTree::insertIdentifier(Token *identifier)
+void IdentifierTree::insertIdentifier(Identifier *identifier)
 {
 	if(this->root == NULL)
 		this->root = identifier;
@@ -58,7 +58,7 @@ void IdentifierTree::insertIdentifier(Token *identifier)
 		insertIdentifier(this->root, identifier);
 }
 
-void IdentifierTree::printTree(Token *node) {
+void IdentifierTree::printTree(Identifier *node) {
 	// Check if the Token Node is NULL
 	if (node != NULL) {
 		// If Token is set then do Pre-Order Traversal on Binary Tree

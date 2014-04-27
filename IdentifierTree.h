@@ -4,6 +4,7 @@
 #define __Lab4_IdentifierTree__
 
 #include "Token.h"
+#include "Identifier.h"
 
 //----------------------//
 // IdentifierTree Class //
@@ -11,13 +12,13 @@
 class IdentifierTree {
 private:
 public:
-	Token *root;
+	Identifier *root;
 	
 	IdentifierTree();
 	~IdentifierTree();
-	void insertIdentifier(Token *parentNode, Token *identifier);
-	void insertIdentifier(Token *identifier);
-	void printTree(Token *node);
+	void insertIdentifier(Identifier *parentNode, Identifier *identifier);
+	void insertIdentifier(Identifier *identifier);
+	void printTree(Identifier *node);
 };
 
 extern IdentifierTree* idTree;

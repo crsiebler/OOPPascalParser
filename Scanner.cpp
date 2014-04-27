@@ -179,9 +179,7 @@ void Scanner::skipComment(char source_buffer[])
 }
 void Scanner::getWord(char *str, char *token_ptr, Token *tok)
 {
-    /*
-     Write some code to Extract the word
-     */
+
     char ch = *line_ptr;
     while ((char_table[ch] == LETTER) || (char_table[ch] == DIGIT))
     {
@@ -199,17 +197,13 @@ void Scanner::getWord(char *str, char *token_ptr, Token *tok)
      */
     if (!isReservedWord(str, tok))
     {
-        //set token to identifier
-        tok->setCode(IDENTIFIER);
+        Identifier newIdent;
+        newIdent->setCode(IDENTIFIER);
+        newIdent->lines->insertLineNode(line_number);
+        tok = &newIdent;
     }
     tok->setTokenString(string(str));
-	
-	/* @TODO */
-	// Check if Token is an Identifier
-	if (tok->getCode() == IDENTIFIER) {
-		
-		tok->lines->insertLineNode(line_number); // Add Line Number to the Token
-	}
+
 }
 void Scanner::getNumber(char *str, char *token_ptr, Token *tok)
 {
@@ -267,17 +261,21 @@ void Scanner::getNumber(char *str, char *token_ptr, Token *tok)
         while (char_table[ch] == DIGIT);
     }
     *token_ptr = '\0';
-    tok->setCode(NUMBER);
     if (int_type)
     {
-        tok->setType(INTEGER_LIT);
-        tok->setLiteral((int)atoi(str));
+        LiteralToken<int> new_lit;
+        new_lit->setLiteral((int)atoi(str));
+        new_lit->setTokenString(new_lit.toString() + " (integer)");
     }
     else
     {
-        tok->setType(REAL_LIT);
-        tok->setLiteral((float)atof(str));
+        LiteralToken<float> new_lit;
+        new_lit->setLiteral((float)atof(str));
+        new_lit->setTokenString(new_lit.toString() + " (real)")
     }
+    new_lit->setCode(NUMBER);
+    tok = &new_lit;
+
 }
 void Scanner::getString(char *str, char *token_ptr, Token *tok)
 {
@@ -293,17 +291,16 @@ void Scanner::getString(char *str, char *token_ptr, Token *tok)
     }
     *token_ptr++ = *line_ptr++;
     *token_ptr = '\0';
-    tok->setCode(STRING);
-    tok->setType(STRING_LIT);
+    LiteralToken<string> new_lit;
+    new_lit->setCode(STRING);
     string test(str);
-    tok->setLiteral(test);
+    new_lit->setLiteral(test);
+    new_lit->setTokenString(new_lit.toString());
+    tok = &new_lit;
 }
 void Scanner::getSpecial(char *str, char *token_ptr, Token *tok)
 {
-    /*
-     Write some code to Extract the special token.  Most are single-character
-     some are double-character.  Set the token appropriately.
-     */
+    
     char ch = *line_ptr;
     *token_ptr = ch;
     

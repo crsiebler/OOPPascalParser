@@ -6,6 +6,7 @@
 #ifndef LiteralTokenH
 #define LiteralTokenH
 #include "Literal.h"
+#include <sstream>
 
 template <class T>
 class LiteralToken : public Literal<T>
@@ -22,8 +23,11 @@ public:
 			literal = lit;
 			return true;
 		};
-	std::string toString(){
-		return "Incomplete Function";
+	std::string toString()
+	{
+		std::ostringstream ss;
+		ss << literal;
+		return ss.str();
 	};
 };
 

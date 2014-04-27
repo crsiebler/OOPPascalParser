@@ -10,3 +10,9 @@ Identifier::Identifier()
     this->leftChild = NULL;
     this->rightChild = NULL;
 }
+
+
+Identifier::~Identifier()
+{
+	delete this->lines;
+}

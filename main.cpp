@@ -37,7 +37,7 @@ int main(int argc, const char * argv[])
         if (token->getCode() != PERIOD && token->getCode() != END_OF_FILE)
         {
             if (token->getCode() == IDENTIFIER) 
-                idTree->insertIdentifier(token);
+                idTree->insertIdentifier(dynamic_cast<Identifier*>(token));
             else
                 delete token;
         }

@@ -2,7 +2,7 @@
 //Created by Terry Ulery, Kristen Tourek, Joe Cruz
 //Lab 5
 
-#include "LiteralToken.cpp"
+#include "LiteralToken.h"
 
 LiteralToken::LiteralToken()
 {

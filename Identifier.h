@@ -25,4 +25,7 @@ public:
 	Identifier *leftChild;
 	Identifier *rightChild;
 
-}
+};
+
+
+#endif

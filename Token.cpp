@@ -11,12 +11,9 @@
 Token::Token()
 {
 
-	
-
 }
 Token::~Token()
 {
-	delete this->lines;
 }
 void Token::setCode(TokenCode newCode)
 {

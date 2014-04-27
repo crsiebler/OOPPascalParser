@@ -4,12 +4,12 @@
 
 #include "LiteralToken.h"
 
-LiteralToken::LiteralToken()
+LiteralToken<T>::LiteralToken()
 {
 	this.literal = NULL;
 }
 
-LiteralToken::~LiteralToken()
+LiteralToken<T>::~LiteralToken()
 {
 	delete this->literal;
 }

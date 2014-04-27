@@ -272,8 +272,8 @@ void Scanner::getNumber(char *str, char *token_ptr, Token *tok)
     else
     {
         LiteralToken<float> new_lit;
-        new_lit->setLiteral((float)atof(str));
-        new_lit->setTokenString(new_lit.toString() + " (real)")
+        new_lit.setLiteral((float)atof(str));
+        new_lit.setTokenString(new_lit.toString() + " (real)");
         tok = &new_lit;
     }
     tok->setCode(NUMBER);

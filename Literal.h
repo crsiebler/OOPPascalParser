@@ -6,6 +6,7 @@
 #ifndef Lab5LiteralH
 #define Lab5LiteralH
 #include "common.h"
+#include "Token.h"
 
 
 template <typename T>

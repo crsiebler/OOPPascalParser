@@ -265,17 +265,18 @@ void Scanner::getNumber(char *str, char *token_ptr, Token *tok)
     if (int_type)
     {
         LiteralToken<int> new_lit;
-        new_lit->setLiteral((int)atoi(str));
-        new_lit->setTokenString(new_lit.toString() + " (integer)");
+        new_lit.setLiteral((int)atoi(str));
+        new_lit.setTokenString(new_lit.toString() + " (integer)");
+        tok = &new_lit;
     }
     else
     {
         LiteralToken<float> new_lit;
         new_lit->setLiteral((float)atof(str));
         new_lit->setTokenString(new_lit.toString() + " (real)")
+        tok = &new_lit;
     }
-    new_lit->setCode(NUMBER);
-    tok = &new_lit;
+    tok->setCode(NUMBER);
 
 }
 void Scanner::getString(char *str, char *token_ptr, Token *tok)

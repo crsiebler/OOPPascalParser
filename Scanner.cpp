@@ -8,6 +8,7 @@
 
 #include "Scanner.h"
 #include "IdentifierTree.h"
+#include "LiteralToken.h"
 
 
 typedef struct
@@ -198,8 +199,8 @@ void Scanner::getWord(char *str, char *token_ptr, Token *tok)
     if (!isReservedWord(str, tok))
     {
         Identifier newIdent;
-        newIdent->setCode(IDENTIFIER);
-        newIdent->lines->insertLineNode(line_number);
+        newIdent.setCode(IDENTIFIER);
+        newIdent.lines->insertLineNode(line_number);
         tok = &newIdent;
     }
     tok->setTokenString(string(str));

@@ -2,6 +2,8 @@
 //Created by Terry Ulery, Kristen Tourek, Joe Cruz
 //Lab 5
 
+#include Identifier.h
+
 
 Identifier::Identifier()
 {

@@ -294,10 +294,10 @@ void Scanner::getString(char *str, char *token_ptr, Token *tok)
     *token_ptr++ = *line_ptr++;
     *token_ptr = '\0';
     LiteralToken<string> new_lit;
-    new_lit->setCode(STRING);
+    new_lit.setCode(STRING);
     string test(str);
-    new_lit->setLiteral(test);
-    new_lit->setTokenString(new_lit.toString());
+    new_lit.setLiteral(test);
+    new_lit.setTokenString(new_lit.toString());
     tok = &new_lit;
 }
 void Scanner::getSpecial(char *str, char *token_ptr, Token *tok)

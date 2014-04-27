@@ -37,7 +37,7 @@ template <typename T> bool LiteralToken<T>::setLiteral(const T &lit)
 
 }
 
-template <typename T> string LiteralToken<T>::toString()
+template <typename T> std::string LiteralToken<T>::toString()
 {
 	return "Incomplete";
 }

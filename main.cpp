@@ -9,7 +9,7 @@
 #include <iostream>
 #include "common.h"
 #include "LiteralToken.h"
-
+using namespace std;
 
 int main(int argc, const char * argv[])
 {

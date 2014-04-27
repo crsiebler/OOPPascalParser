@@ -17,7 +17,7 @@ public:
 	~LiteralToken();
 	bool getLiteral(const T &lit);
 	bool setLiteral(const T &lit);
-	string toString();
+	std::string toString();
 };
 
 

@@ -6,15 +6,15 @@
 
 template <typename T>LiteralToken<T>::LiteralToken()
 {
-	this.literal = NULL;
+	literal = NULL;
 }
 
 template <typename T>LiteralToken<T>::~LiteralToken()
 {
-	delete this->literal;
+	delete literal;
 }
 
-bool LiteralToken::getLiteral(const T &lit)
+template <typename T> bool LiteralToken<T>::getLiteral(const T &lit)
 {
 	if (this.literal != NULL)
 	{
@@ -25,7 +25,7 @@ bool LiteralToken::getLiteral(const T &lit)
 		return false;
 }
 
-bool LiteralToken::setLiteral(const T &lit)
+template <typename T> bool LiteralToken<T>::setLiteral(const T &lit)
 {
 	if (this.literal == NULL)
 	{
@@ -37,7 +37,7 @@ bool LiteralToken::setLiteral(const T &lit)
 
 }
 
-string LiteralToken::toString()
+template <typename T> string LiteralToken<T>::toString()
 {
 	return "Incomplete";
 }

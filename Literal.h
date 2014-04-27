@@ -5,10 +5,10 @@
 
 #ifndef Lab5LiteralH
 #define Lab5LiteralH
-#include "Token.h"
+//#include "Token.h"
 
 template <typename T>
-class Literal : public Token
+class Literal //: public Token
 {
 private:
 

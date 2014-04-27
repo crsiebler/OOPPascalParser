@@ -7,7 +7,7 @@
 #define Lab5LiteralH
 #include "Token.h"
 
-template typename<T>
+template <typename T>
 class Literal : public Token
 {
 private:

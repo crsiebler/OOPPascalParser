@@ -8,7 +8,7 @@
 #include "Literal.h"
 
 template <class T>
-class LiteralToken : public Literal <T>
+class LiteralToken : public Literal<T>
 {
 private:
 	T literal;

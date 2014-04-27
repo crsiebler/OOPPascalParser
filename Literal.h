@@ -16,7 +16,7 @@ private:
 
 public:
 
-	virtual bool getLiteral(const T &lit) = 0;
+	virtual bool getLiteral(T &lit) = 0;
 	virtual bool setLiteral(const T &lit) = 0;
 	virtual std::string toString() = 0;
 	

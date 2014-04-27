@@ -31,31 +31,7 @@
 			"file": "common.h",
 			"settings":
 			{
-				"buffer_size": 1323,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Token.h",
-			"settings":
-			{
-				"buffer_size": 1104,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Identifier.cpp",
-			"settings":
-			{
-				"buffer_size": 245,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Identifier.h",
-			"settings":
-			{
-				"buffer_size": 434,
+				"buffer_size": 1320,
 				"line_ending": "Windows"
 			}
 		},
@@ -63,31 +39,15 @@
 			"file": "Literal.h",
 			"settings":
 			{
-				"buffer_size": 147,
+				"buffer_size": 351,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Token.cpp",
+			"file": "LiteralToken.h",
 			"settings":
 			{
-				"buffer_size": 1148,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Scanner.h",
-			"settings":
-			{
-				"buffer_size": 1407,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Scanner.cpp",
-			"settings":
-			{
-				"buffer_size": 12530,
+				"buffer_size": 443,
 				"line_ending": "Windows"
 			}
 		},
@@ -95,7 +55,7 @@
 			"file": "main.cpp",
 			"settings":
 			{
-				"buffer_size": 1642,
+				"buffer_size": 431,
 				"line_ending": "Windows"
 			}
 		}
@@ -124,6 +84,13 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/LiteralToken.cpp",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Token.h",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Identifier.cpp",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Identifier.h",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Token.cpp",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Scanner.h",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Scanner.cpp",
 		"/C/Users/Terry/Documents/thread.cpp",
 		"/C/Users/Terry/Documents/GitHub/Space_Frontier/Design Documents/corefeatures.txt",
 		"/C/Users/Terry/Documents/GitHub/kLea/CSE220-T6-Lab4/common.h",
@@ -224,7 +191,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -232,7 +199,7 @@
 					"file": "common.h",
 					"settings":
 					{
-						"buffer_size": 1323,
+						"buffer_size": 1320,
 						"regions":
 						{
 						},
@@ -248,32 +215,30 @@
 							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Token.h",
+					"file": "Literal.h",
 					"settings":
 					{
-						"buffer_size": 1104,
+						"buffer_size": 351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								200,
-								200
+								343,
+								343
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -283,22 +248,23 @@
 				},
 				{
 					"buffer": 2,
-					"file": "Identifier.cpp",
+					"file": "LiteralToken.h",
 					"settings":
 					{
-						"buffer_size": 245,
+						"buffer_size": 443,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								214,
-								214
+								201,
+								201
 							]
 						],
 						"settings":
 						{
+							"auto_name": "",
 							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -309,154 +275,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "Identifier.h",
-					"settings":
-					{
-						"buffer_size": 434,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								73,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Literal.h",
-					"settings":
-					{
-						"buffer_size": 147,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								133,
-								133
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Token.cpp",
-					"settings":
-					{
-						"buffer_size": 1148,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								236,
-								236
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Scanner.h",
-					"settings":
-					{
-						"buffer_size": 1407,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Scanner.cpp",
-					"settings":
-					{
-						"buffer_size": 12530,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5973,
-								5973
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
 					"file": "main.cpp",
 					"settings":
 					{
-						"buffer_size": 1642,
+						"buffer_size": 431,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								431,
+								431
 							]
 						],
 						"settings":
@@ -505,6 +335,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 158.0
+	},
 	"replace":
 	{
 		"height": 62.0

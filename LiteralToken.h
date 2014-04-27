@@ -13,11 +13,18 @@ class LiteralToken : public Literal<T>
 private:
 	T literal;
 public:
-	LiteralToken();
-	~LiteralToken();
-	bool getLiteral(const T &lit);
-	bool setLiteral(const T &lit);
-	std::string toString();
+	
+	bool getLiteral(T &lit){
+		lit = literal;
+		return true;
+		};
+	bool setLiteral(const T &lit){
+			literal = lit;
+			return true;
+		};
+	std::string toString(){
+		return "Incomplete Function";
+	};
 };
 
 

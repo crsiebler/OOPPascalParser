@@ -8,16 +8,23 @@
 #include "Literal.h"
 
 template <class T>
-class LiteralToken : public Literal <T>
+class LiteralToken : public Literal<T>
 {
 private:
 	T literal;
 public:
-	LiteralToken();
-	~LiteralToken();
-	bool getLiteral(const T &lit);
-	bool setLiteral(const T &lit);
-	string toString();
+	
+	bool getLiteral(T &lit){
+		lit = literal;
+		return true;
+		};
+	bool setLiteral(const T &lit){
+			literal = lit;
+			return true;
+		};
+	std::string toString(){
+		return "Incomplete Function";
+	};
 };
 
 

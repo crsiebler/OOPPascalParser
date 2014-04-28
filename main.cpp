@@ -38,6 +38,8 @@ int main(int argc, const char * argv[])
         {
             if (token->getCode() == IDENTIFIER){ 
                 printf("inserting Identifier\n");
+                string nodeStr = token->getTokenString();
+                printf("%-16s\t", nodeStr.c_str());
                 idTree->insertIdentifier(dynamic_cast<Identifier*>(token));
             }
             else

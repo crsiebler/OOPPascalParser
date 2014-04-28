@@ -192,14 +192,12 @@ void Scanner::getWord(char *str, char *token_ptr, Token *tok)
     //Downshift the word, to make it lower case
     downshiftWord(str);
     
-    /*
-     Write some code to Check if the word is a reserved word.
-     if it is not a reserved word its an identifier.
-     */
+    
     if (!isReservedWord(str, tok))
     {
-        //Identifier newIdent = new Identifier();
-        //newIdent.lines->insertLineNode(line_number);
+        Identifier newIdent = new Identifier();
+        newIdent.lines->insertLineNode(line_number);
+        tok = newIdent;
 	tok->setCode(IDENTIFIER);
     }
     tok->setTokenString(string(str));

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"n",
+				"n"
+			],
+			[
 				"down",
 				"downshift_word"
 			],
@@ -28,66 +32,10 @@
 	"buffers":
 	[
 		{
-			"file": "common.h",
+			"file": "Print.cpp",
 			"settings":
 			{
-				"buffer_size": 1323,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Token.h",
-			"settings":
-			{
-				"buffer_size": 1104,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Identifier.cpp",
-			"settings":
-			{
-				"buffer_size": 245,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Identifier.h",
-			"settings":
-			{
-				"buffer_size": 434,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Literal.h",
-			"settings":
-			{
-				"buffer_size": 147,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Token.cpp",
-			"settings":
-			{
-				"buffer_size": 1148,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Scanner.h",
-			"settings":
-			{
-				"buffer_size": 1407,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Scanner.cpp",
-			"settings":
-			{
-				"buffer_size": 12530,
+				"buffer_size": 2681,
 				"line_ending": "Windows"
 			}
 		},
@@ -95,7 +43,79 @@
 			"file": "main.cpp",
 			"settings":
 			{
-				"buffer_size": 1642,
+				"buffer_size": 1669,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Identifier.cpp",
+			"settings":
+			{
+				"buffer_size": 323,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Identifier.h",
+			"settings":
+			{
+				"buffer_size": 475,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "IdentifierTree.cpp",
+			"settings":
+			{
+				"buffer_size": 2350,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "IdentifierTree.h",
+			"settings":
+			{
+				"buffer_size": 579,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Scanner.cpp",
+			"settings":
+			{
+				"buffer_size": 12529,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Token.h",
+			"settings":
+			{
+				"buffer_size": 1112,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Token.cpp",
+			"settings":
+			{
+				"buffer_size": 1127,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Print.h",
+			"settings":
+			{
+				"buffer_size": 677,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Literal.h",
+			"settings":
+			{
+				"buffer_size": 362,
 				"line_ending": "Windows"
 			}
 		}
@@ -124,6 +144,18 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Scanner.cpp",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/common.h",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Literal.h",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/LiteralToken.h",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/LiteralToken.cpp",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/main.cpp",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Print.cpp",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Token.h",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Identifier.cpp",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Identifier.h",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Token.cpp",
+		"/C/Users/Terry/Documents/GitHub/CSE220-T6-LAB5/Scanner.h",
 		"/C/Users/Terry/Documents/thread.cpp",
 		"/C/Users/Terry/Documents/GitHub/Space_Frontier/Design Documents/corefeatures.txt",
 		"/C/Users/Terry/Documents/GitHub/kLea/CSE220-T6-Lab4/common.h",
@@ -224,28 +256,30 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "common.h",
+					"file": "Print.cpp",
 					"settings":
 					{
-						"buffer_size": 1323,
+						"buffer_size": 2681,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								113,
+								113
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage"
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -255,18 +289,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Token.h",
+					"file": "main.cpp",
 					"settings":
 					{
-						"buffer_size": 1104,
+						"buffer_size": 1669,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								200,
-								200
+								211,
+								211
 							]
 						],
 						"settings":
@@ -286,15 +320,15 @@
 					"file": "Identifier.cpp",
 					"settings":
 					{
-						"buffer_size": 245,
+						"buffer_size": 323,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								214,
-								214
+								87,
+								87
 							]
 						],
 						"settings":
@@ -312,15 +346,15 @@
 					"file": "Identifier.h",
 					"settings":
 					{
-						"buffer_size": 434,
+						"buffer_size": 475,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								73,
-								0
+								185,
+								185
 							]
 						],
 						"settings":
@@ -335,18 +369,45 @@
 				},
 				{
 					"buffer": 4,
-					"file": "Literal.h",
+					"file": "IdentifierTree.cpp",
 					"settings":
 					{
-						"buffer_size": 147,
+						"buffer_size": 2350,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								133,
-								133
+								1650,
+								1650
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "IdentifierTree.h",
+					"settings":
+					{
+						"buffer_size": 579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								579,
+								579
 							]
 						],
 						"settings":
@@ -360,47 +421,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "Token.cpp",
-					"settings":
-					{
-						"buffer_size": 1148,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								236,
-								236
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 6,
-					"file": "Scanner.h",
+					"file": "Scanner.cpp",
 					"settings":
 					{
-						"buffer_size": 1407,
+						"buffer_size": 12529,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								8210,
+								8210
 							]
 						],
 						"settings":
@@ -410,25 +443,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2925.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "Scanner.cpp",
+					"file": "Token.h",
 					"settings":
 					{
-						"buffer_size": 12530,
+						"buffer_size": 1112,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5973,
-								5973
+								672,
+								672
 							]
 						],
 						"settings":
@@ -445,10 +478,38 @@
 				},
 				{
 					"buffer": 8,
-					"file": "main.cpp",
+					"file": "Token.cpp",
 					"settings":
 					{
-						"buffer_size": 1642,
+						"buffer_size": 1127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Print.h",
+					"settings":
+					{
+						"buffer_size": 677,
 						"regions":
 						{
 						},
@@ -464,6 +525,32 @@
 							"syntax": "Packages/C++/C++.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Literal.h",
+					"settings":
+					{
+						"buffer_size": 362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -505,6 +592,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 158.0
+	},
 	"replace":
 	{
 		"height": 62.0

@@ -191,16 +191,19 @@ Token Scanner::getWord(char *str, char *token_ptr)
     
     //Downshift the word, to make it lower case
     downshiftWord(str);
-    
+    Token *tok = new Token();
     
     if (!isReservedWord(str, tok))
     {
+        delete tok;
         Identifier *newIdent = new Identifier();
         newIdent->lines->insertLineNode(line_number);
 	    newIdent->setCode(IDENTIFIER);
+        newIdent->setTokenString(string(str));
+        return newIdent;
     }
-    newIdent->setTokenString(string(str));
-    return newIdent;
+    else
+        return tok;
 
 }
 void Scanner::getNumber(char *str, char *token_ptr, Token *tok)

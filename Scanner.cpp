@@ -195,9 +195,9 @@ void Scanner::getWord(char *str, char *token_ptr, Token *tok)
     
     if (!isReservedWord(str, tok))
     {
-        Identifier newIdent = new Identifier();
+        Identifier newIdent;
         newIdent.lines->insertLineNode(line_number);
-        tok = newIdent;
+        tok = &newIdent;
 	tok->setCode(IDENTIFIER);
     }
     tok->setTokenString(string(str));

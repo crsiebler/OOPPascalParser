@@ -41,8 +41,6 @@ int main(int argc, const char * argv[])
                 string nodeStr = token->getTokenString();
                 printf("%-16s\t", nodeStr.c_str());
                 Identifier *newIdent = dynamic_cast<Identifier*>(token);
-                nodeStr = newIdent->getTokenString();
-                printf("%-16s\t", nodeStr.c_str());
                 idTree->insertIdentifier(newIdent);
             }
             else

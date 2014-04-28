@@ -60,6 +60,7 @@ void IdentifierTree::insertIdentifier(Identifier *identifier)
 	{
 		printf("Inserting identifier as child.\n");
 		insertIdentifier(this->root, identifier);
+	}
 }
 
 void IdentifierTree::printTree(Identifier *node) {

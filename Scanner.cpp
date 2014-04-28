@@ -200,10 +200,10 @@ Token Scanner::getWord(char *str, char *token_ptr)
         newIdent->lines->insertLineNode(line_number);
 	    newIdent->setCode(IDENTIFIER);
         newIdent->setTokenString(string(str));
-        return newIdent;
+        return *newIdent;
     }
     else
-        return tok;
+        return *tok;
 
 }
 void Scanner::getNumber(char *str, char *token_ptr, Token *tok)

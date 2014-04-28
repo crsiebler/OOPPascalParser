@@ -67,10 +67,10 @@ void Print::printToken(Token *token)
 {
     char line[MAX_SOURCE_LINE_LENGTH + 32];
     const char *symbol_string = SYMBOL_STRINGS[token->getCode()];
-    
-    //switch (token->getCode())
-    //{
-        /*case NUMBER:
+
+    switch (token->getCode())
+    {
+        case NUMBER:
             if (token->getType() == INTEGER_LIT)
             {
                 sprintf(line, "    >> %-16s %d (integer)\n", symbol_string, token->getIntLiteral());
@@ -83,11 +83,10 @@ void Print::printToken(Token *token)
         case STRING:
             sprintf(line, "    >> %-16s %-s\n", symbol_string, token->getStringLiteral().c_str());
             break;
-        default:*/
-
-        sprintf(line, "    >> %-16s %-s\n", symbol_string, token->getTokenString().c_str());
-            //break;
-    //}
+        default:
+	    sprintf(line, "    >> %-16s %-s\n", symbol_string, token->getTokenString().c_str());
+            break;
+    }
     printLine(line);
 }
 
@@ -95,7 +94,8 @@ void Print::printToken(Token *token)
 // printTree Method //
 //------------------//
 void Print::printTree(IdentifierTree *tree) {
-	/* @TODO */
+	printf("\n");
+	printf("Cross Reference Information\n");
 	printf("Identifier\tLine Numbers\n");
 	printf("----------\t------------\n");
 	

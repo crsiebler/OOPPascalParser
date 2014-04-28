@@ -27,7 +27,6 @@ IdentifierTree::~IdentifierTree() {
 // insertIdentifier Method //
 //-------------------------//
 void IdentifierTree::insertIdentifier(Identifier *parentNode, Identifier *identifier) {
-	
 	if (strcmp(identifier->getTokenString().c_str(),parentNode->getTokenString().c_str()) == 0) {
 		// Identifier is the same as the parent
 		// Insert the Line Number into the List List for the matching Token

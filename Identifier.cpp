@@ -4,7 +4,6 @@
 
 #include "Identifier.h"
 
-
 Identifier::Identifier()
 {
 	// Initialize the Linked List of Line Occurrences

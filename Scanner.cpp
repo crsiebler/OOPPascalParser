@@ -102,7 +102,7 @@ Token* Scanner::getToken()
     switch (char_table[ch])
     {//3.  Call the appropriate function to deal with the cases in 2.
         case LETTER:
-            getWord(token_string, token_ptr, new_token);
+            *new_token = getWord(token_string, token_ptr);
             break;
         case DIGIT:
             getNumber(token_string, token_ptr, new_token);
@@ -118,7 +118,7 @@ Token* Scanner::getToken()
             break;
     }
     
-    return new_token; //What should be returned here?
+    return new_token; 
 }
 char Scanner::getChar(char source_buffer[])
 {
@@ -178,7 +178,7 @@ void Scanner::skipComment(char source_buffer[])
     }
     while ((ch != '}') && (ch != EOF_CHAR));
 }
-void Scanner::getWord(char *str, char *token_ptr, Token *tok)
+Token Scanner::getWord(char *str, char *token_ptr)
 {
 
     char ch = *line_ptr;
@@ -197,10 +197,10 @@ void Scanner::getWord(char *str, char *token_ptr, Token *tok)
     {
         Identifier *newIdent = new Identifier();
         newIdent->lines->insertLineNode(line_number);
-        tok = newIdent;
-	tok->setCode(IDENTIFIER);
+	    newIdent->setCode(IDENTIFIER);
     }
-    tok->setTokenString(string(str));
+    newIdent->setTokenString(string(str));
+    return newIdent;
 
 }
 void Scanner::getNumber(char *str, char *token_ptr, Token *tok)

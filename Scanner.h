@@ -41,7 +41,7 @@ private:
     char getChar(char source_buffer[]);
     void skipBlanks(char source_buffer[]);
     void skipComment(char source_buffer[]);
-    void getWord(char *str, char *token_ptr, Token *tok);
+    Token getWord(char *str, char *token_ptr);
     void getNumber(char *str, char *token_ptr, Token *tok);
     void getString(char *str, char *token_ptr, Token *tok);
     void getSpecial(char *str, char *token_ptr, Token *tok);

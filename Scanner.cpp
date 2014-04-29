@@ -276,8 +276,8 @@ Token* Scanner::getNumber(char *str, char *token_ptr)
     {
 	
         LiteralToken<float> *new_lit;
-        new_lit.setLiteral((float)atof(str));
-        new_lit.setTokenString(new_lit->toString() + " (real)");
+        new_lit->setLiteral((float)atof(str));
+        new_lit->setTokenString(new_lit->toString() + " (real)");
 		new_lit->setLiteral((float) atof(str));
         new_lit->setCode(NUMBER);
         return new_lit;
@@ -305,7 +305,7 @@ Token* Scanner::getString(char *str, char *token_ptr)
     new_lit->setCode(STRING);
     string test(str);
     new_lit->setLiteral(test);
-    new_lit->setTokenString(new_lit.toString());
+    new_lit->setTokenString(new_lit->toString());
     
 
     string temp(str);

@@ -55,8 +55,6 @@ void IdentifierTree::insertIdentifier(Identifier *identifier)
 	{
 		this->root = identifier;
 		printf("Inserted identifier as root.\n");
-		string nodeStr = identifier->getTokenString();
-		printf("%-16s\t", nodeStr.c_str());
 	}
 	else
 	{

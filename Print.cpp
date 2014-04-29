@@ -86,7 +86,7 @@ void Print::printToken(Token *token)
         default:*/
 	    sprintf(line, "    >> %-16s %-s\n", symbol_string, token->getTokenString().c_str());
             //break;
-    }
+    //}
     printLine(line);
 }
 

@@ -105,10 +105,10 @@ Token* Scanner::getToken()
             new_token = getWord(token_string, token_ptr);
             break;
         case DIGIT:
-            getNumber(token_string, token_ptr, new_token);
+            new_token = getNumber(token_string, token_ptr);
             break;
         case QUOTE:
-            getString(token_string, token_ptr, new_token);
+            new_token = getString(token_string, token_ptr);
             break;
         case EOF_CODE:
             new_token->setCode(END_OF_FILE);
@@ -267,7 +267,7 @@ Token* Scanner::getNumber(char *str, char *token_ptr)
 	
        LiteralToken<int> *new_lit;
        new_lit->setLiteral((int)atoi(str));
-       new_lit->setTokenString(new_lit.toString() + " (integer)");
+       new_lit->setTokenString(new_lit->toString() + " (integer)");
 	   new_lit->setLiteral((int) atoi(str));
        new_lit->setCode(NUMBER);
        return new_lit;
@@ -277,7 +277,7 @@ Token* Scanner::getNumber(char *str, char *token_ptr)
 	
         LiteralToken<float> *new_lit;
         new_lit.setLiteral((float)atof(str));
-        new_lit.setTokenString(new_lit.toString() + " (real)");
+        new_lit.setTokenString(new_lit->toString() + " (real)");
 		new_lit->setLiteral((float) atof(str));
         new_lit->setCode(NUMBER);
         return new_lit;

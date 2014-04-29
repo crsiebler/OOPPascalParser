@@ -28,7 +28,7 @@ public:
 	{
 		std::ostringstream ss;
 		ss << literal;
-		printf("%s",ss.str())
+		printf("%s",ss.str());
 		return ss.str();
 	};
 };

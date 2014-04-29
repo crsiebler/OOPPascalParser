@@ -206,7 +206,7 @@ Token* Scanner::getWord(char *str, char *token_ptr)
         return tok;
 
 }
-void Scanner::getNumber(char *str, char *token_ptr, Token *tok)
+Token* Scanner::getNumber(char *str, char *token_ptr)
 {
     /*
      Write some code to Extract the number and convert it to a literal number.
@@ -264,23 +264,25 @@ void Scanner::getNumber(char *str, char *token_ptr, Token *tok)
     *token_ptr = '\0';
     if (int_type)
     {
-	/*
-        LiteralToken<int> new_lit;
-        new_lit.setLiteral((int)atoi(str));
-        new_lit.setTokenString(new_lit.toString() + " (integer)");
-	*/
-	tok->setLiteral((int) atoi(str));
+	
+       LiteralToken<int> *new_lit;
+       new_lit->setLiteral((int)atoi(str));
+       new_lit->setTokenString(new_lit.toString() + " (integer)");
+	   new_lit->setLiteral((int) atoi(str));
+       new_lit->setCode(NUMBER);
+       return new_lit;
     }
     else
     {
-	/*
-        LiteralToken<float> new_lit;
+	
+        LiteralToken<float> *new_lit;
         new_lit.setLiteral((float)atof(str));
         new_lit.setTokenString(new_lit.toString() + " (real)");
-	*/
-	tok->setLiteral((float) atof(str));
+		new_lit->setLiteral((float) atof(str));
+        new_lit->setCode(NUMBER);
+        return new_lit;
     }
-    tok->setCode(NUMBER);
+
 
 }
 void Scanner::getString(char *str, char *token_ptr, Token *tok)

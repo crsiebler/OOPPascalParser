@@ -21,7 +21,7 @@ public:
 		};
 	bool setLiteral(const T &lit){
 			literal = lit;
-			setTokenString(toString());
+			this->setTokenString(toString());
 			return true;
 		};
 	std::string toString()

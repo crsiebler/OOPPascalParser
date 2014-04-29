@@ -29,7 +29,7 @@ public:
 		std::ostringstream ss;
 		ss << literal;
 		std::string newStr = ss.str();
-		printf("%s",newStr;
+		printf("%s",newStr);
 		return ss.str();
 	};
 };

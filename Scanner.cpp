@@ -285,7 +285,7 @@ Token* Scanner::getNumber(char *str, char *token_ptr)
 
 
 }
-void Scanner::getString(char *str, char *token_ptr, Token *tok)
+Token* Scanner::getString(char *str, char *token_ptr)
 {
     /*
      Write some code to Extract the string
@@ -300,18 +300,19 @@ void Scanner::getString(char *str, char *token_ptr, Token *tok)
     *token_ptr++ = *line_ptr++;
     *token_ptr = '\0';
 
-    /*
-    LiteralToken<string> new_lit;
-    new_lit.setCode(STRING);
+    
+    LiteralToken<string> *new_lit;
+    new_lit->setCode(STRING);
     string test(str);
-    new_lit.setLiteral(test);
-    new_lit.setTokenString(new_lit.toString());
-    */
+    new_lit->setLiteral(test);
+    new_lit->setTokenString(new_lit.toString());
+    
 
     string temp(str);
 
-    tok->setCode(STRING);
-    tok->setLiteral(temp);
+    new_lit->setCode(STRING);
+    new_lit->setLiteral(temp);
+    return new_lit;
 }
 void Scanner::getSpecial(char *str, char *token_ptr, Token *tok)
 {

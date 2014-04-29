@@ -43,7 +43,7 @@ private:
     void skipComment(char source_buffer[]);
     Token* getWord(char *str, char *token_ptr);
     Token* getNumber(char *str, char *token_ptr);
-    void getString(char *str, char *token_ptr, Token *tok);
+    Token* getString(char *str, char *token_ptr);
     void getSpecial(char *str, char *token_ptr, Token *tok);
     void downshiftWord(char word[]);
     bool isReservedWord(char *str, Token *tok);

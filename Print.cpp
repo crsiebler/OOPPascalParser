@@ -68,7 +68,7 @@ void Print::printToken(Token *token)
     char line[MAX_SOURCE_LINE_LENGTH + 32];
     const char *symbol_string = SYMBOL_STRINGS[token->getCode()];
 
-    switch (token->getCode())
+    /*switch (token->getCode())
     {
         case NUMBER:
             if (token->getType() == INTEGER_LIT)
@@ -83,9 +83,9 @@ void Print::printToken(Token *token)
         case STRING:
             sprintf(line, "    >> %-16s %-s\n", symbol_string, token->getStringLiteral().c_str());
             break;
-        default:
+        default:*/
 	    sprintf(line, "    >> %-16s %-s\n", symbol_string, token->getTokenString().c_str());
-            break;
+            //break;
     }
     printLine(line);
 }

@@ -37,9 +37,6 @@ int main(int argc, const char * argv[])
         if (token->getCode() != PERIOD && token->getCode() != END_OF_FILE)
         {
             if (token->getCode() == IDENTIFIER){ 
-                printf("inserting Identifier\n");
-                string nodeStr = token->getTokenString();
-                printf("%-16s\t", nodeStr.c_str());
                 Identifier* newIdent = dynamic_cast<Identifier*>(token);
                 idTree->insertIdentifier(newIdent);
             }

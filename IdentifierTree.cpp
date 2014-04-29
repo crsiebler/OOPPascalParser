@@ -54,11 +54,9 @@ void IdentifierTree::insertIdentifier(Identifier *identifier)
 	if(this->root == NULL)
 	{
 		this->root = identifier;
-		printf("Inserted identifier as root.\n");
 	}
 	else
 	{
-		printf("Inserting identifier as child.\n");
 		insertIdentifier(this->root, identifier);
 	}
 }

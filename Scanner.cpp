@@ -300,7 +300,6 @@ Token* Scanner::getString(char *str, char *token_ptr)
 
     
     LiteralToken<string> *new_lit = new LiteralToken<string>();
-    new_lit->setCode(STRING);
     string test(str);
     new_lit->setLiteral(test);
     new_lit->setTokenString(new_lit->toString());

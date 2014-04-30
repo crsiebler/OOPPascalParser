@@ -122,11 +122,6 @@ Token* Scanner::getToken()
 }
 char Scanner::getChar(char source_buffer[])
 {
-    /*
-     If at the end of the current line (how do you check for that?),
-     we should call get source line.  If at the EOF (end of file) we should
-     set the character ch to EOF and leave the function.
-     */
     char ch;
     
     if (*line_ptr == '\0')

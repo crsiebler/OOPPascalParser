@@ -299,7 +299,7 @@ Token* Scanner::getString(char *str, char *token_ptr)
     *token_ptr = '\0';
 
     
-    LiteralToken<string> *new_lit;
+    LiteralToken<string> *new_lit = new LiteralToken<string>();
     new_lit->setCode(STRING);
     string test(str);
     new_lit->setLiteral(test);

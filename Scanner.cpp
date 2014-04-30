@@ -304,12 +304,7 @@ Token* Scanner::getString(char *str, char *token_ptr)
     string test(str);
     new_lit->setLiteral(test);
     new_lit->setTokenString(new_lit->toString());
-    
-
-    string temp(str);
-
     new_lit->setCode(STRING);
-    new_lit->setLiteral(temp);
     return new_lit;
 }
 void Scanner::getSpecial(char *str, char *token_ptr, Token *tok)

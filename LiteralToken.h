@@ -28,7 +28,6 @@ public:
 		std::ostringstream ss;
 		ss << literal;
 		std::string newStr = ss.str();
-		printf("%s",newStr.c_str());
 		return ss.str();
 	};
 };
